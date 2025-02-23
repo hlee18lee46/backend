@@ -94,5 +94,4 @@ wheel==0.45.1
 xgboost==2.1.4
 zipp==3.21.0
 gunicorn
-Flask==2.2.5
 flask-cors==3.0.10
