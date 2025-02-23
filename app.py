@@ -3,9 +3,12 @@ import pickle
 import numpy as np
 import pandas as pd
 import pennylane as qml
+from flask_cors import CORS
+from flask import Flask, jsonify
 
 # Initialize Flask App
 app = Flask(__name__)
+CORS(app)  # This will allow all domains to access your API
 
 # Load the trained Quantum RF model
 with open("quantum_rf_model_rf_withbrowser.pkl", "rb") as model_file:
